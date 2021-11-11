@@ -7,6 +7,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField]private float attackCooldown;
     [SerializeField] private GameObject projectilePrefab;
     [SerializeField] private Transform gunTrans;
+    [SerializeField] private Animator myAnim;
     private bool canShoot;
     void Start()
     {
@@ -22,6 +23,7 @@ public class PlayerAttack : MonoBehaviour
             //shoot stuff
             GameObject projectile = Instantiate(projectilePrefab, gunTrans.position, Quaternion.identity)as GameObject;
             projectile.GetComponent<GenericProjectile>().Fire(new Vector2(transform.localScale.x,0));
+            myAnim.SetTrigger("shoot");
         }
     }
 

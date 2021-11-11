@@ -30,11 +30,13 @@ public class Lizy : MonoBehaviour
             {
                 index = 0;
                 currentPoint = points[index];
+                transform.localScale = new Vector3(transform.localScale.x *-1,transform.localScale.y,transform.localScale.z);
             }
             else
             {
                 index = 1;
                 currentPoint = points[index];
+                transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
             }
         }
         

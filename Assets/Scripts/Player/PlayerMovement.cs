@@ -34,7 +34,8 @@ public class PlayerMovement : MonoBehaviour
         {
             //jump
             inAir = true;
-            transform.position += Vector3.up * jumpForce;
+            //transform.position = Vector3.Lerp(transform.position,transform.position +new Vector3(0,jumpForce,0), 0.2f);
+            myRigidBody.AddForce(Vector2.up * jumpForce,ForceMode2D.Impulse);
             myAnimator.SetTrigger("jump");
         }
     }
@@ -61,9 +62,9 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.CompareTag("Ground"))
+        if (other.CompareTag("Solid"))
         {
             inAir = false;
         }
