@@ -118,10 +118,10 @@ TextureImporter:
     second: Retro-Lines-Enemies_104
   - first:
       213: 5987578937035889760
-    second: Retro-Lines-Enemies_107
+    second: mushshoot1
   - first:
       213: -2517153803758781474
-    second: Retro-Lines-Enemies_108
+    second: mushshoot2
   - first:
       213: -696338412625147411
     second: Retro-Lines-Enemies_110
@@ -169,7 +169,7 @@ TextureImporter:
     second: Retro-Lines-Enemies_132
   - first:
       213: -5065336821040185990
-    second: Retro-Lines-Enemies_136
+    second: mushProjectile
   - first:
       213: 7040930420481373684
     second: Retro-Lines-Enemies_138
@@ -1081,7 +1081,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Retro-Lines-Enemies_107
+      name: mushshoot1
       rect:
         serializedVersion: 2
         x: 144
@@ -1102,7 +1102,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Retro-Lines-Enemies_108
+      name: mushshoot2
       rect:
         serializedVersion: 2
         x: 160
@@ -1438,13 +1438,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Retro-Lines-Enemies_136
+      name: mushProjectile
       rect:
         serializedVersion: 2
-        x: 128
+        x: 139
         y: 48
-        width: 16
-        height: 16
+        width: 3
+        height: 3
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
