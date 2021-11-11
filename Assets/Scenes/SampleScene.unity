@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 848000629}
   m_Layer: 0
   m_Name: Collision
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15292,6 +15292,7 @@ GameObject:
   - component: {fileID: 1953888244}
   - component: {fileID: 1953888246}
   - component: {fileID: 1953888247}
+  - component: {fileID: 1953888249}
   - component: {fileID: 1953888243}
   - component: {fileID: 1953888248}
   m_Layer: 0
@@ -15314,7 +15315,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myAnimator: {fileID: 0}
-  playerSpeed: 50
+  playerSpeed: 5
+  jumpForce: 1
 --- !u!212 &1953888244
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15446,3 +15448,29 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &1953888249
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953888242}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.127298, y: -0.49009418}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.49685097, y: 0.123867035}
+  m_EdgeRadius: 0

@@ -30,11 +30,12 @@ public class PlayerMovement : MonoBehaviour
         change = Vector3.zero;
         change.x = Input.GetAxisRaw("Horizontal");
         PlayAnimationsAndMove();
-        if(Input.GetButtonDown("jump") && !inAir)
+        if(Input.GetButtonDown("Jump") && !inAir)
         {
             //jump
             inAir = true;
-            myRigidBody.MovePosition(Vector2.up * jumpForce * Time.deltaTime);
+            transform.position = transform.position + Vector3.up * jumpForce;
+            myAnimator.SetTrigger("jump");
         }
     }
 
@@ -47,7 +48,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (change != Vector3.zero)
         {
-            //currentState = PlayerState.walk;
             MoveCharacter();
             change.x = Mathf.Round(change.x);
             change.y = Mathf.Round(change.y);
