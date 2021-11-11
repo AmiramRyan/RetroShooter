@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
         {
             //jump
             inAir = true;
-            transform.position = transform.position + Vector3.up * jumpForce;
+            transform.position += Vector3.up * jumpForce;
             myAnimator.SetTrigger("jump");
         }
     }
