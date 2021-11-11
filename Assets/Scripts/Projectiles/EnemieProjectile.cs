@@ -9,6 +9,7 @@ public class EnemieProjectile : GenericProjectile
         if (other.CompareTag("Player"))
         {
             other.GetComponent<PlayerHealth>().TakeDmg();
+            Destroy(this.gameObject);
         }
     }
 }

@@ -54,7 +54,6 @@ public class PlayerMovement : MonoBehaviour
             change.y = Mathf.Round(change.y);
             transform.localScale = new Vector2(change.x,transform.localScale.y);
             myAnimator.SetBool("isMoving", true);
-            myAnimator.SetFloat("moveX", change.x);
         }
         else
         {
